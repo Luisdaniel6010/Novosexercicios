@@ -14,5 +14,5 @@ newlist.textContent = nome+" "+idade;
 ldados.appendChild(newlist);
 
 document.getElementById("nome").value=" "; 
-document.getElementById("idade").value=" "; 
+document.getElementById("idade").value=" ";
 }
