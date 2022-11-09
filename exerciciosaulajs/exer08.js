@@ -1,9 +1,9 @@
 
 
 function captura() {
-    var nomb=document.getElementById("pnombre").value;
-    var anos=document.getElementById("idade").value;
-    var tel=document.getElementById("telef").value;
+    let nomb=document.getElementById("pnombre").value;
+    let anos=document.getElementById("idade").value;
+    let tel=document.getElementById("telef").value;
     let myArr =[nomb, anos, tel]
 
     if(nomb==""){
@@ -28,4 +28,4 @@ function captura() {
 }
 }
 }
-document.write(myArr);
+

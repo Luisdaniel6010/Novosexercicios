@@ -16,12 +16,3 @@ ldados.appendChild(newlist);
 document.getElementById("nome").value=" "; 
 document.getElementById("idade").value=" "; 
 }
-
-/*function comparacao {
-
-    if (idade > idade ) {
-        let newlist1 = document.createElement('li');
-        newlist.textContent = nome+" "+"é maior que:"+" "nome;
-        ldados1.appendChild(newlist1);
-    }
-}
