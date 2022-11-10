@@ -1,25 +1,26 @@
 let nomb;
 let idad;
-let continuar=true;
+let continuar=false;
 let ingresar=true;
 let array1 =[]
 let msjs = document.getElementById('msj')
 let lista = document.createElement('li')
 let ndados = document.querySelector('#nlista')
 
-
 do{
+   
     nomb = document.getElementById("nome").value;
     idad = document.getElementById("idade").value;
+
     let resposta = {
-        firstname: nomb,
-        age: idad
+       firstname: nomb,
+       age: idad
     }
-    array1.push(resposta)
-
+    array1.push(resposta);
     continuar = window.confirm('Deseja ingresar novos dados');
+   
 
-}while (continuar)
+}while(continuar);
 
 console.log(array1)
 
@@ -32,7 +33,7 @@ for(let i = 0; i < array1.length; i++){
     nm = array1[i].firstname
    } 
 }
-console.log(`a pessoa com mais idade é: ${nm} e seu ${res}`)
+console.log(`a pessoa com mais idade é: ${nm} e sua idade é ${res}`)
 lista.textContent=`A pessoa com mais idade é ${nm} e sua idade é ${res}`
 ndados.appendChild(lista)
 
