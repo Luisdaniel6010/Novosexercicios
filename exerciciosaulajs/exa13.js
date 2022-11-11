@@ -2,7 +2,7 @@ function validateEmail(e){
     let field = e.target;
     let fieldValue = field.value;
 
-    if(fieldValue.search('@', '.com') == -1) {
+    if(fieldValue.search('@') == -1) {
         displayError('Email não é valido', field);
     }else{
         clearError(field);
@@ -52,6 +52,7 @@ function checkEnableSubmit() {
     let erros = form.querySelectorAll('.is-invalid');
 
     if(erros.length == 0 && notValidate.length == 0) {
+      console.log('enableSubmit')
         enableSubmit();
     }else{
         disableSubmit();
@@ -61,14 +62,14 @@ function checkEnableSubmit() {
 
 function enableSubmit() {
     let form = document.querySelector('#form');
-    let submit = document.querySelector ('[type-submit]');
+    let submit = document.getElementById('boton');
 
     submit.disabled = false;
 }
 
 function disableSubmit() {
     let form = document.querySelector('#form');
-    let submit = document.querySelector ('[type-submit]');
+    let submit = document.getElementById('boton');
 
     submit.disabled = true;
 }
