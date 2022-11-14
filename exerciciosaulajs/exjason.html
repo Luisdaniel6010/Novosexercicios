@@ -13,9 +13,9 @@
 <form id="form" class="form container mx-auto row align-items-start">
     <label>
         Ingrese o CEP
-        <input class="form-control" placeholder="09972-350" required 
-        id="cep1">   
-        <button type="submit" class="mt-4 btn btn-primary" onclick="pesquisar()">Pesquisar</button>
+        <input type="text" class="form-control" placeholder="09972-350" required 
+        id="cep" onblur="pegarDadosCep()">   
+        <button type="submit" class="mt-4 btn btn-primary" onclick="newdados()">Pesquisar</button>
     </label>
 </form>
 <hr>
