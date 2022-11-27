@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Document</title>
+</head>
+<body>
+        <div class="eu">
+            
+            <h1>Formulário</h1>
+                <form id="form">
+                    <div>
+                        <input type="text" placeholder="Digite o seu nome:" class="inputs required" oninput="nameValidate()">
+                        <span class="span-required">Nome deve ter no mínimo 4 caracteres</span>
+                    </div>
+
+                    <div>
+                        <input type="email" placeholder="Digite seu melhor email :" class="inputs required" oninput="emailValidate()">
+                        <span class="span-required">Digite uma email valido</span>
+                    </div>
+
+                    <div>
+                        <input type="text" placeholder="Senha" class="inputs required" oninput="mainPasswordValidate()">
+                        <span class="span-required">A senha deve ter no mínimo 8 caracteres</span>
+                    </div>
+
+                    <div>
+                        <input type="text" placeholder="Repita a sua senha" class="inputs required" oninput="comparePassword()">
+                        <span class="span-required">A senha deve ser compatíveis</span>
+                    </div>
+
+                    <textarea class="inputs" name="descricao" id="descricao" cols="30" rows="10" placeholder="fale um pouco sobre você"></textarea>
+                    <p>Sexo:</p>
+                    <div class="box-select">
+                        <div>
+                            <input type="radio" id="m" value="m" name="sexo">
+                            <label for="m">Masculino</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="f" value="f" name="sexo">
+                            <label for="f">Feminino</label>
+                        </div>
+
+                        <div>
+                            <input type="radio" id="o" value="o" name="sexo">
+                            <label for="o">Outro</label>
+                        </div>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
+        </div> 
+        <script src="formulario.js"></script>       
+</body>
+</html>
